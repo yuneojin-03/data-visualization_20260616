@@ -2,13 +2,15 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import koreanize_matplotlib
 import warnings
 
 # ---------------------------------------------------
 # 1. 기본 설정 (wide 모드로 넓게 쓰기)
 # ---------------------------------------------------
 warnings.filterwarnings('ignore')
-plt.rc('font', family='Malgun Gothic')  # Mac 사용자는 'AppleGothic'
+# plt.rc('font', family='Malgun Gothic')  # Mac 사용자는 'AppleGothic'
+
 plt.rcParams['axes.unicode_minus'] = False
 
 st.set_page_config(page_title="영화 흥행 트렌드 대시보드", page_icon="🎬", layout="wide")
